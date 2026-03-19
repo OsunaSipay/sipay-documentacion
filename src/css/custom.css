@@ -1,30 +1,101 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Estilos personalizados - Identidad visual Sipay
+ * Colores: Naranja #F45227, Blanco roto #F3F4F6, Gris y Negro
+ * Tipografía: Inter
  */
 
-/* You can override the default Infima variables here. */
+/* Importar fuente Inter desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Variables de color Sipay */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Naranja principal Sipay */
+  --ifm-color-primary: #F45227;
+  --ifm-color-primary-dark: #E04520;
+  --ifm-color-primary-darker: #D43E1C;
+  --ifm-color-primary-darkest: #B03316;
+  --ifm-color-primary-light: #F6633D;
+  --ifm-color-primary-lighter: #F77453;
+  --ifm-color-primary-lightest: #FA9578;
+  
+  /* Blanco roto y fondos */
+  --ifm-background-color: #ffffff;
+  --sipay-bg-secondary: #F3F4F6;
+  --sipay-text-dark: #1f2937;
+  --sipay-text-muted: #6b7280;
+  
+  /* Tipografía Inter */
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-font-family-monospace: 'Inter', ui-monospace, monospace;
+  
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(244, 82, 39, 0.15);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Modo oscuro */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #F45227;
+  --ifm-color-primary-dark: #E04520;
+  --ifm-color-primary-darker: #D43E1C;
+  --ifm-color-primary-darkest: #B03316;
+  --ifm-color-primary-light: #F6633D;
+  --ifm-color-primary-lighter: #F77453;
+  --ifm-color-primary-lightest: #FA9578;
+  
+  --ifm-background-color: #111827;
+  --sipay-bg-secondary: #1f2937;
+  --sipay-text-dark: #f9fafb;
+  --sipay-text-muted: #9ca3af;
+  
+  --docusaurus-highlighted-code-line-bg: rgba(244, 82, 39, 0.25);
+}
+
+/* Navbar estilo Sipay */
+.navbar {
+  background-color: #ffffff !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme='dark'] .navbar {
+  background-color: #1f2937 !important;
+}
+
+/* Sidebar con fondo blanco roto */
+.theme-doc-sidebar-container {
+  background-color: var(--sipay-bg-secondary) !important;
+}
+
+[data-theme='dark'] .theme-doc-sidebar-container {
+  background-color: var(--sipay-bg-secondary) !important;
+}
+
+/* Enlaces del navbar con hover naranja */
+.navbar__link:hover {
+  color: var(--ifm-color-primary) !important;
+}
+
+/* Botones primarios */
+.button--primary {
+  background-color: var(--ifm-color-primary) !important;
+  border-color: var(--ifm-color-primary) !important;
+}
+
+.button--primary:hover {
+  background-color: var(--ifm-color-primary-dark) !important;
+  border-color: var(--ifm-color-primary-dark) !important;
+}
+
+/* Enlaces en el contenido */
+a {
+  color: var(--ifm-color-primary);
+}
+
+a:hover {
+  color: var(--ifm-color-primary-dark);
+}
+
+/* Títulos con Inter */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ifm-font-family-base);
+  font-weight: 600;
 }

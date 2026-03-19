@@ -19,6 +19,7 @@
   tutorialSidebar: [
     'intro',           // docs/intro.md
     'hello',
+    'guia-git',        // Guía para iniciar proyecto y subir cambios a Git
     {
       type: 'category',
       label: 'Tutorial',  // Nombre de la categoría

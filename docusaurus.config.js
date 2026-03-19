@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Sipay Documentacion',
   tagline: 'Documentación hecha con Docusaurus',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon-sipay.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -107,9 +107,8 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/OsunaSipay/sipay-documentacion',
             label: 'GitHub',
             position: 'right',
           },

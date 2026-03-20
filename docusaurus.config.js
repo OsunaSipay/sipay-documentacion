@@ -118,25 +118,29 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentación',
             items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
+              { label: 'Introducción', to: '/docs/intro' },
+              { label: 'Guía Git', to: '/docs/guia-git' },
             ],
           },
           {
-            title: 'More',
+            title: 'Sipay',
             items: [
-              {
-                label: 'LinkedIn',
-                href: 'https://www.linkedin.com/company/sipay-es/',
-              },
+              { label: 'Sitio web', href: 'https://sipay.es' },
+              { label: 'Developers', href: 'https://developer.sipay.es/docs' },
+              { label: 'Contacto', href: 'https://sipay.es/contacto' }
             ],
           },
+          {
+            title: 'Comunidad',
+            items: [
+              { label: 'LinkedIn', href: 'https://www.linkedin.com/company/sipay-es/' },
+              { label: 'GitHub', href: 'https://github.com/OsunaSipay/sipay-documentacion' }
+            ]
+          }
         ],
-        copyright: `© ${new Date().getFullYear()} Sipay Plus Docusaurus. All rights reserved.`,
+        copyright: `© ${new Date().getFullYear()} Sipay. Documentación técnica`,
       },
       prism: {
         theme: prismThemes.github,

@@ -20,7 +20,13 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Ver documentación
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="https://sipay.es/contacto/"
+            style={{ margin: '1rem'}}>
+            Contactar con Sipay
           </Link>
         </div>
       </div>
@@ -32,8 +38,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title="Documentación Sipay"
+      description="Documentación técnica de Sipay - Plataforma de pagos">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

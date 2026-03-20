@@ -14,17 +14,22 @@
 
  @type {import('@docusaurus/plugin-content-docs').SidebarsConfig}
  */
- const sidebars = {
-  // La barra lateral "tutorialSidebar" se usa por defecto
+const sidebars = {
   tutorialSidebar: [
-    'intro',           // docs/intro.md
+    'intro',
     'hello',
-    'guia-git',        // Guía para iniciar proyecto y subir cambios a Git
+    'guia-git',
     {
       type: 'category',
-      label: 'Tutorial',  // Nombre de la categoría
-      items: ['tutorial-basics/create-a-document', 'tutorial-basics/create-a-page'],
+      label: 'Pagos online',
+      items: ['pagos-online/introduccion'],
     },
+    {
+      type: 'category',
+      label: 'APIs',
+      items: ['apis/introduccion'],
+    },
+    'mcp-setup',
   ],
 };
 
